@@ -5,20 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Delicious Catering Co.</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <!-- Header Section -->
-  <header>
+  <!-- Navigation -->
+  <nav>
     <div class="container">
-      <h1>Delicious Catering Co.</h1>
-      <p>Exquisite Catering for Every Occasion</p>
+      <a href="#" class="logo">Delicious Catering Co.</a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Exquisite Catering for Every Occasion</h1>
+      <p>Delivering unforgettable culinary experiences tailored to your needs.</p>
       <a href="#contact" class="btn">Book Now</a>
     </div>
-  </header>
+  </section>
 
   <!-- About Section -->
-  <section id="about">
+  <section id="about" class="about">
     <div class="container">
       <h2>About Us</h2>
       <p>At Delicious Catering Co., we specialize in creating unforgettable culinary experiences. Whether it's a wedding, corporate event, or private party, our team is dedicated to delivering exceptional food and service.</p>
@@ -26,19 +41,22 @@
   </section>
 
   <!-- Services Section -->
-  <section id="services">
+  <section id="services" class="services">
     <div class="container">
       <h2>Our Services</h2>
       <div class="services-grid">
         <div class="service">
+          <i class="fas fa-glass-cheers"></i>
           <h3>Weddings</h3>
           <p>Custom menus tailored to your special day.</p>
         </div>
         <div class="service">
+          <i class="fas fa-briefcase"></i>
           <h3>Corporate Events</h3>
           <p>Impress your clients with gourmet catering.</p>
         </div>
         <div class="service">
+          <i class="fas fa-birthday-cake"></i>
           <h3>Private Parties</h3>
           <p>Delicious food for birthdays, anniversaries, and more.</p>
         </div>
@@ -47,7 +65,7 @@
   </section>
 
   <!-- Menu Section -->
-  <section id="menu">
+  <section id="menu" class="menu">
     <div class="container">
       <h2>Our Menu</h2>
       <div class="menu-grid">
@@ -68,7 +86,7 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact">
+  <section id="contact" class="contact">
     <div class="container">
       <h2>Contact Us</h2>
       <form>
