@@ -59,7 +59,7 @@ nav .nav-links a:hover {
 
 /* Hero Section */
 .hero {
-  background: url('https://via.placeholder.com/1200x800') no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1200x800') no-repeat center center/cover;
   color: #fff;
   text-align: center;
   padding: 150px 0;
@@ -68,13 +68,11 @@ nav .nav-links a:hover {
 .hero h1 {
   font-size: 4rem;
   margin: 0;
-  animation: fadeIn 2s ease-in-out;
 }
 
 .hero p {
   font-size: 1.5rem;
   margin: 20px 0 40px;
-  animation: fadeIn 2.5s ease-in-out;
 }
 
 .hero .btn {
@@ -85,7 +83,6 @@ nav .nav-links a:hover {
   border-radius: 5px;
   font-size: 1rem;
   transition: background 0.3s;
-  animation: fadeIn 3s ease-in-out;
 }
 
 .hero .btn:hover {
@@ -100,14 +97,33 @@ nav .nav-links a:hover {
 
 .about h2 {
   font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-text {
+  flex: 1;
+  text-align: left;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
   margin-bottom: 20px;
 }
 
-.about p {
-  max-width: 800px;
-  margin: 0 auto;
-  font-size: 1.1rem;
-  line-height: 1.8;
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 10px;
 }
 
 /* Services Section */
@@ -181,4 +197,85 @@ nav .nav-links a:hover {
   transition: transform 0.3s;
 }
 
-.menu
+.menu-item:hover {
+  transform: translateY(-10px);
+}
+
+.menu-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.menu-item h3 {
+  font-size: 1.5rem;
+  margin: 20px 0 10px;
+}
+
+/* Contact Section */
+.contact {
+  background: #f9f9f9;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form input, form textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form button {
+  background: #ff6f61;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #ff4a3d;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer a {
+  color: #ff6f61;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
