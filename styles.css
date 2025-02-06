@@ -17,60 +17,133 @@ h1, h2, h3 {
   margin: 0 auto;
 }
 
-/* Header */
-header {
-  background: url('https://via.placeholder.com/1200x800') no-repeat center center/cover;
-  color: #fff;
-  text-align: center;
-  padding: 100px 0;
+/* Navigation */
+nav {
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-header h1 {
-  font-size: 4rem;
-  margin: 0;
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
 }
 
-header p {
+nav .logo {
   font-size: 1.5rem;
-  margin: 10px 0 20px;
-}
-
-.btn {
-  background: #ff6f61;
-  color: #fff;
-  padding: 10px 20px;
+  font-weight: 600;
+  color: #333;
   text-decoration: none;
-  border-radius: 5px;
-  font-size: 1rem;
 }
 
-.btn:hover {
-  background: #ff4a3d;
-}
-
-/* Sections */
-section {
-  padding: 60px 0;
-}
-
-h2 {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-/* Services Grid */
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+nav .nav-links {
+  list-style: none;
+  display: flex;
   gap: 20px;
 }
 
-.service {
-  background: #f9f9f9;
-  padding: 20px;
-  border-radius: 10px;
+nav .nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav .nav-links a:hover {
+  color: #ff6f61;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://via.placeholder.com/1200x800') no-repeat center center/cover;
+  color: #fff;
   text-align: center;
+  padding: 150px 0;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin: 0;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin: 20px 0 40px;
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+.hero .btn {
+  background: #ff6f61;
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background 0.3s;
+  animation: fadeIn 3s ease-in-out;
+}
+
+.hero .btn:hover {
+  background: #ff4a3d;
+}
+
+/* About Section */
+.about {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Services Section */
+.services {
+  background: #f9f9f9;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.service {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.service:hover {
+  transform: translateY(-10px);
+}
+
+.service i {
+  font-size: 2.5rem;
+  color: #ff6f61;
+  margin-bottom: 20px;
 }
 
 .service h3 {
@@ -78,63 +151,34 @@ h2 {
   margin-bottom: 10px;
 }
 
-/* Menu Grid */
+.service p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Menu Section */
+.menu {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.menu h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
 .menu-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  gap: 30px;
 }
 
 .menu-item {
-  text-align: center;
-}
-
-.menu-item img {
-  width: 100%;
+  background: #fff;
+  padding: 20px;
   border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
 }
 
-/* Contact Form */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-form input, form textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-form button {
-  background: #ff6f61;
-  color: #fff;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-form button:hover {
-  background: #ff4a3d;
-}
-
-/* Footer */
-footer {
-  background: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-}
-
-footer a {
-  color: #ff6f61;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
+.menu
