@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
   <!-- Navigation -->
@@ -26,9 +27,9 @@
   <!-- Hero Section -->
   <section id="home" class="hero">
     <div class="container">
-      <h1>Exquisite Catering for Every Occasion</h1>
-      <p>Delivering unforgettable culinary experiences tailored to your needs.</p>
-      <a href="#contact" class="btn">Book Now</a>
+      <h1 class="animate__animated animate__fadeInDown">Exquisite Catering for Every Occasion</h1>
+      <p class="animate__animated animate__fadeInUp">Delivering unforgettable culinary experiences tailored to your needs.</p>
+      <a href="#contact" class="btn animate__animated animate__fadeIn">Book Now</a>
     </div>
   </section>
 
@@ -36,7 +37,15 @@
   <section id="about" class="about">
     <div class="container">
       <h2>About Us</h2>
-      <p>At Delicious Catering Co., we specialize in creating unforgettable culinary experiences. Whether it's a wedding, corporate event, or private party, our team is dedicated to delivering exceptional food and service.</p>
+      <div class="about-content">
+        <div class="about-text">
+          <p>At Delicious Catering Co., we specialize in creating unforgettable culinary experiences. Whether it's a wedding, corporate event, or private party, our team is dedicated to delivering exceptional food and service.</p>
+          <a href="#services" class="btn">Learn More</a>
+        </div>
+        <div class="about-image">
+          <img src="https://via.placeholder.com/400x300" alt="About Us">
+        </div>
+      </div>
     </div>
   </section>
 
@@ -45,17 +54,17 @@
     <div class="container">
       <h2>Our Services</h2>
       <div class="services-grid">
-        <div class="service">
+        <div class="service animate__animated animate__fadeInLeft">
           <i class="fas fa-glass-cheers"></i>
           <h3>Weddings</h3>
           <p>Custom menus tailored to your special day.</p>
         </div>
-        <div class="service">
+        <div class="service animate__animated animate__fadeInUp">
           <i class="fas fa-briefcase"></i>
           <h3>Corporate Events</h3>
           <p>Impress your clients with gourmet catering.</p>
         </div>
-        <div class="service">
+        <div class="service animate__animated animate__fadeInRight">
           <i class="fas fa-birthday-cake"></i>
           <h3>Private Parties</h3>
           <p>Delicious food for birthdays, anniversaries, and more.</p>
@@ -69,15 +78,15 @@
     <div class="container">
       <h2>Our Menu</h2>
       <div class="menu-grid">
-        <div class="menu-item">
+        <div class="menu-item animate__animated animate__fadeInLeft">
           <img src="https://via.placeholder.com/300x200" alt="Appetizers">
           <h3>Appetizers</h3>
         </div>
-        <div class="menu-item">
+        <div class="menu-item animate__animated animate__fadeInUp">
           <img src="https://via.placeholder.com/300x200" alt="Main Course">
           <h3>Main Course</h3>
         </div>
-        <div class="menu-item">
+        <div class="menu-item animate__animated animate__fadeInRight">
           <img src="https://via.placeholder.com/300x200" alt="Desserts">
           <h3>Desserts</h3>
         </div>
